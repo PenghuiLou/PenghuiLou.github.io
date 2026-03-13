@@ -18,14 +18,22 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Noto Sans SC', sans-serif;
-            /* 莫兰迪浅底色（氛围感天花板） */
-            background-color: #f8f7f4;
-            color: #333333;
-            line-height: 1.6;
-            padding: 2rem 1rem;
-            /* 平滑滚动，沉浸式体验 */
-            scroll-behavior: smooth;
+            body {
+    font-family: 'Noto Sans SC', sans-serif;
+    /* 背景图设置 */
+    background-image: url("backima.jpg");
+    background-size: cover;       /* 让图片铺满整个屏幕 */
+    background-position: center;  /* 图片居中显示 */
+    background-attachment: fixed; /* 滚动页面时背景固定不动 */
+    background-repeat: no-repeat; /* 不重复平铺 */
+    color: #333333;
+    line-height: 1.6;
+    padding: 2rem 1rem;
+    scroll-behavior: smooth;
+    /* 加一层半透明白色遮罩，让文字更清晰 */
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: overlay;
+}
         }
 
         /* 容器：居中排版，不拥挤 */
@@ -182,3 +190,4 @@
 </body>
 
 </html>
+
