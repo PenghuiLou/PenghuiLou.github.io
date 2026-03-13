@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- Vibe Coding 个人网站 | 极简氛围感 -->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机自适应（必加！） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 | 个人主页</title>
+    <!-- 谷歌优雅字体（氛围感拉满） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* 全局样式：Vibe核心！柔和配色+舒适排版 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            /* 莫兰迪浅底色（氛围感天花板） */
+            background-color: #f8f7f4;
+            color: #333333;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+            /* 平滑滚动，沉浸式体验 */
+            scroll-behavior: smooth;
+        }
+
+        /* 容器：居中排版，不拥挤 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 头部：自我介绍区域 */
+        header {
+            text-align: center;
+            margin: 4rem 0;
+            animation: fadeIn 1s ease; /* 淡入动画，小细节拉满 */
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* 圆形头像 */
+            object-fit: cover;
+            border: 3px solid #e0dacd;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #2d2a2e;
+        }
+        .bio {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 卡片模块：技能/作品/爱好（通用样式） */
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease; /* 悬浮微动效 */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Vibe小动画 */
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: #2d2a2e;
+            border-left: 4px solid #e0dacd;
+            padding-left: 1rem;
+        }
+        .card p {
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        /* 联系方式 */
+        .links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        .links a {
+            text-decoration: none;
+            color: #2d2a2e;
+            padding: 0.5rem 1.2rem;
+            border: 1px solid #e0dacd;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        .links a:hover {
+            background: #e0dacd;
+            color: white;
+        }
+
+        /* 淡入动画 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部：头像+名字+简介 -->
+        <header>
+            <!-- 替换成你的头像链接/本地图片 -->
+            <img src="avatar.jpg" alt="头像" class="avatar">
+            <h1>Penghui</h1>
+            <p class="bio">喜欢观鸟，也创作一些与鸟类有关的内容。 ✨</p>
+        </header>
+
+        <!-- 模块1：关于我 -->
+        <div class="card">
+            <h2>关于我</h2>
+            <p>一个喜欢Vibe Coding的普通人，享受沉浸式创作的快乐。</p>
+            <p>平时喜欢写代码、做设计、记录生活，用技术创造属于自己的小世界。</p>
+        </div>
+
+        <!-- 模块2：我的技能 -->
+        <div class="card">
+            <h2>我的技能</h2>
+            <p>✅ 前端基础：HTML + CSS + JavaScript</p>
+            <p>✅ 氛围编码：随性创作，快速落地想法</p>
+            <p>✅ 其他：摄影、写作、摸鱼小能手 😎</p>
+        </div>
+
+        <!-- 模块3：我的作品 -->
+        <div class="card">
+            <h2>我的作品</h2>
+            <p>🎨 个人网站（就是这个啦！）</p>
+            <p>📝 博客/笔记：记录学习和生活</p>
+            <p>🚀 小项目：持续创作中...</p>
+        </div>
+
+        <!-- 模块4：我的博客 -->
+        <div class="card">
+        <h2>我的博客</h2>
+        <!-- 文章1 -->
+        <div class="blog-item">
+        <h3>📝 五常湿地鸟类观察简报</h3>
+        <p class="blog-date">2026-03-10</p>
+        <p>今天在Hebden Bridge附近的山谷徒步，终于拍到了红鸢盘旋的瞬间，分享一下观鸟技巧和照片背后的故事...</p>
+        <a href="blog-1.html" class="read-more">阅读全文 →</a>
+        </div>
+        <!-- 文章2（复制上面的结构就能加更多） -->
+        <div class="blog-item">
+        <h3>🐦 观鸟相机OM1的参数设置心得</h3>
+        <p class="blog-date">2026-03-08</p>
+        <p>用奥之心OM1拍鸟半年了，总结了一套适合快速捕捉飞鸟的参数，新手也能轻松上手...</p>
+        <a href="blog-2.html" class="read-more">阅读全文 →</a>
+        </div>
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="mailto:your-email@xxx.com">邮箱</a>
+            <a href="#">小红书/知乎</a>
+        </div>
+    </div>
+
+    <!-- 一点点JS：Vibe小彩蛋（页面加载提示） -->
+    <script>
+        console.log("✨ 欢迎来到我的Vibe个人网站！");
+        // 随性加更多交互，比如点击头像变色、切换背景色，完全看你的心情～
+    </script>
+</body>
+</html>
